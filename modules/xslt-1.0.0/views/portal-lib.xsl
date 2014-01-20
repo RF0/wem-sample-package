@@ -11,12 +11,34 @@
 
   <xsl:function name="portal:createUrl" as="xsd:string">
     <xsl:param name="path" as="xsd:string"/>
-    <xsl:param name="params" as="xsd:string*"/>
-    <xsl:value-of select="concat($_/context/baseUrl, '/', $path)"/>
+    <xsl:param name="params" as="xsd:anyAtomicType*"/>
+	<xsl:variable name="args">
+		<xsl:for-each select="$params">
+			<xsl:choose>
+				<xsl:when test="(position() mod 2) != 0">
+					<xsl:choose>
+						<xsl:when test="position() = 1">
+							<xsl:text>?</xsl:text>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:text><![CDATA[&]]></xsl:text>
+						</xsl:otherwise>
+					</xsl:choose>
+					<xsl:value-of select="concat(., '=')"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="."/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:for-each>
+	</xsl:variable>	
+    <xsl:value-of select="concat($_/context/baseUrl, '/', $path, $args)"/>
   </xsl:function>
 
-  <xsl:function name="portal:isComponentInline" as="xsd:boolean">
-    <xsl:value-of select="true()"/>
+  <xsl:function name="portal:createServiceUrl" as="xsd:string">
+    <xsl:param name="name" as="xsd:string"/>
+    <xsl:param name="params" as="xsd:anyAtomicType*"/>
+    <xsl:value-of select="portal:createUrl(concat('_/service/', $name), $params)"/>
   </xsl:function>
 
 </xsl:stylesheet>
