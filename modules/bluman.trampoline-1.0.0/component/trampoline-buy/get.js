@@ -1,5 +1,18 @@
-var part = portal.component;
+var editMode = portal.request.mode == 'edit';
 
-portal.response.body = 'Part component: ' + part.name;
+var content = portal.content;
+var component = portal.component;
+
+var body = system.mustache.render('views/trampoline-buy.html', {
+    title: content.displayName,
+    path: content.path,
+    name: content.name,
+    editable: editMode,
+    resourcesPath: portal.url.createResourceUrl(''),
+    component: component
+});
+
+
+portal.response.body = body;
 portal.response.contentType = 'text/html';
 portal.response.status = 200;
