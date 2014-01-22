@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part-template>
+    <name>trampoline-buy</name>
+    <display-name>Trampoline - buy</display-name>
+    <descriptor>demo-1.0.0:trampoline-buy</descriptor>
+    <config/>
+</part-template>

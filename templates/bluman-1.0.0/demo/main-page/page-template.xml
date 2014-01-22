@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page-template>
+    <name>main-page</name>
+    <display-name>Main Page</display-name>
+    <descriptor>demo-1.0.0:landing-page</descriptor>
+    <config>
+        <property name="background-color" type="String">blue</property>
+    </config>
+    <can-render/>
+    <regions>
+        <region name="main">
+            <part-component name="PartInMain" template="Bluman-1.0.0|demo-1.0.0|trampoline-buy">
+                <config>
+                    <property name="text" type="String">Take a part!</property>
+                </config>
+            </part-component>
+        </region>
+    </regions>
+</page-template>
