@@ -9,6 +9,10 @@
     </vendor>
     <modules>
         <module>demo-1.0.0</module>
+        <module>xslt-1.0.0</module>
+        <module>bluman-trampoline-1.0.0</module>
+        <module>com.enonic.comments-0.9.1</module>
+        <module>com.enonic.image-1.0.0</module>
     </modules>
     <content-filter/>
     <root-content-type>trampoline</root-content-type>

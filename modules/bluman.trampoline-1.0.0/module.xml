@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
-  <display-name>Demo module</display-name>
+  <display-name>Bluman Trampoline module</display-name>
   <info>For demo purposes only.</info>
   <url>http://enonic.net</url>
   <vendor>
     <name>Enonic AS</name>
     <url>http://www.enonic.com</url>
   </vendor>
-  <dependencies system-min-version="5.0.0" system-max-version="6.0.0"/>
+  <dependencies system-min-version="5.0.0" system-max-version="6.0.0" />
   <form name="config">
     <input type="TextLine" name="my-config-a">
       <label>My config A</label>
