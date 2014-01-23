@@ -9,12 +9,12 @@
   <can-render/>
   <regions>
     <region name="main">
-      <part-component name="TrampolineBuy" template="Bluman-1.0.0|demo-1.0.0|trampoline-buy">
+      <part-component name="TrampolineBuy" template="bluman-1.0.0|demo-1.0.0|trampoline-buy">
         <config>
           <property name="text" type="String">Take a part!</property>
         </config>
       </part-component>
-      <part-component name="TrampolineAccessories" template="Bluman-1.0.0|demo-1.0.0|trampoline-accessories">
+      <part-component name="TrampolineAccessories" template="bluman-1.0.0|demo-1.0.0|trampoline-accessories">
         <config>
           <property name="text" type="String">Take a part!</property>
         </config>
