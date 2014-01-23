@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <type>
-  <name>trampoline</name>
   <display-name>Trampoline</display-name>
   <content-display-name-script>$('vendor') + ' - ' + $('name')</content-display-name-script>
   <super-type>structured</super-type>
