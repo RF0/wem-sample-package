@@ -2,6 +2,6 @@
 <part-template>
     <name>trampoline-buy</name>
     <display-name>Trampoline Buy</display-name>
-    <descriptor>demo-1.0.0:trampoline-buy</descriptor>
+    <descriptor>bluman.trampoline-1.0.0:trampoline-buy</descriptor>
     <config/>
 </part-template>

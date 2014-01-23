@@ -2,6 +2,6 @@
 <part-template>
     <name>trampoline-accessories</name>
     <display-name>Trampoline Accessories</display-name>
-    <descriptor>demo-1.0.0:trampoline-accessories</descriptor>
+    <descriptor>bluman.trampoline-1.0.0:trampoline-accessories</descriptor>
     <config/>
 </part-template>
