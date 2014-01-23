@@ -10,7 +10,8 @@ var body = system.mustache.render('views/frogger.html', {
     resourcesPath: portal.url.createResourceUrl(''),
     mainRegion: pageRegions.getRegion("main"),
     leftRegion: pageRegions.getRegion("left"),
-    rightRegion: pageRegions.getRegion("right")
+    rightRegion: pageRegions.getRegion("right"),
+    baseUrl: portal.url.createUrl('')
 });
 
 portal.response.body = body;
