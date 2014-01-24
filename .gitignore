@@ -1,2 +1,4 @@
 # Ignore backup files
 *~
+.DS_Store
+.idea
