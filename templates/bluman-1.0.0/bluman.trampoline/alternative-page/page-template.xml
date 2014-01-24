@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <page-template>
-  <name>main-page</name>
-  <display-name>Main Page</display-name>
+  <name>alternative-page</name>
+  <display-name>Alternative Page</display-name>
   <descriptor>bluman.trampoline-1.0.0:landing-page</descriptor>
   <config>
     <property name="background-color" type="String">blue</property>
