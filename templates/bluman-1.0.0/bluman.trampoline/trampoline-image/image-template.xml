@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part-template>
+    <name>trampoline-image</name>
+    <display-name>Trampoline Image</display-name>
+    <descriptor>bluman.trampoline-1.0.0:trampoline-image</descriptor>
+    <config/>
+</part-template>
