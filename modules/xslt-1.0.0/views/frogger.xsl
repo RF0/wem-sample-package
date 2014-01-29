@@ -8,9 +8,10 @@
   <xsl:param name="title" select="''"/>
 
   <xsl:template match="/">
+    <html lang="en">
     <head>
       <meta charset="utf-8"/>
-      <title><xsl:value-of select="$title"/>"</title>
+      <title><xsl:value-of select="$title"/></title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="description" content=""/>
       <meta name="author" content=""/>
@@ -75,7 +76,7 @@
       <xsl:if test="$editable">
       <script type="text/javascript">
         var CONFIG = {
-        baseUri: "{{baseUrl}}"
+        baseUri: '<xsl:value-of select="portal:createResourceUrl('')"/>'
         };
       </script>
 
@@ -114,6 +115,7 @@
 
 
     </body>
+    </html>
   </xsl:template>
 
 </xsl:stylesheet>
