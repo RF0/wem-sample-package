@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:portal="wem:portal" xmlns:wem="http://enonic.com/wem">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:portal="wem:portal"
+                xmlns:wem="http://enonic.com/wem"
+                exclude-result-prefixes="wem portal">
 
   <xsl:output method="html" omit-xml-declaration="yes"/>
 
