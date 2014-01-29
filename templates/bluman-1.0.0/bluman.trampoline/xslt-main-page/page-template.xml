@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <page-template>
-  <name>xslt-main-page</name>
   <display-name>Xslt Main Page</display-name>
   <descriptor>xslt-1.0.0:xslt-landing-page</descriptor>
   <config>
@@ -9,20 +8,20 @@
   <can-render/>
   <regions>
     <region name="main">
-      <part-component name="TrampolineBuy" template="bluman-1.0.0|bluman.trampoline-1.0.0|trampoline-buy">
+      <part-component name="TrampolineBuy" template="bluman.trampoline|trampoline-buy">
         <config>
           <property name="text" type="String">Take a part!</property>
         </config>
       </part-component>
-      <part-component name="TrampolineAccessories" template="bluman-1.0.0|bluman.trampoline-1.0.0|trampoline-accessories">
+      <part-component name="TrampolineAccessories" template="bluman.trampoline|trampoline-accessories">
         <config>
           <property name="text" type="String">Take a part!</property>
         </config>
       </part-component>
-      <layout-component name="Layout70-30" template="bluman-1.0.0|bluman.trampoline-1.0.0|trampoline-70-30">
+      <layout-component name="Layout70-30" template="bluman.trampoline|trampoline-70-30">
         <regions>
           <region name="left">
-            <part-component name="TrampolineDescription" template="bluman-1.0.0|bluman.trampoline-1.0.0|trampoline-description">
+            <part-component name="TrampolineDescription" template="bluman.trampoline|trampoline-description">
               <config/>
             </part-component>
           </region>

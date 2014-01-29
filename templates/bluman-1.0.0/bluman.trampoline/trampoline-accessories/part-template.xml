@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <part-template>
-    <name>trampoline-accessories</name>
     <display-name>Trampoline Accessories</display-name>
     <descriptor>bluman.trampoline-1.0.0:trampoline-accessories</descriptor>
     <config/>
