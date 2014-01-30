@@ -11,7 +11,5 @@
     </config>
     <regions>
         <region name="main"/>
-        <region name="left"/>
-        <region name="right"/>
     </regions>
 </page-component>

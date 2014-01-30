@@ -2,17 +2,14 @@ var editMode = portal.request.mode == 'edit';
 
 var content = portal.content;
 var component = portal.component;
-var layoutRegions = portal.layoutRegions;
 
-var body = system.mustache.render('views/trampoline-70-30.html', {
+var body = system.mustache.render('views/trampoline-comments.html', {
     title: content.displayName,
     path: content.path,
     name: content.name,
     editable: editMode,
     resourcesPath: portal.url.createResourceUrl(''),
-    component: component,
-    leftRegion: layoutRegions.getRegion("left"),
-    rightRegion: layoutRegions.getRegion("right")
+    component: component
 });
 
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part-template>
+    <display-name>Trampoline Comments</display-name>
+    <descriptor>bluman.trampoline-1.0.0:trampoline-comments</descriptor>
+    <config/>
+</part-template>
