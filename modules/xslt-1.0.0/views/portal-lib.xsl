@@ -16,7 +16,11 @@
 
   <xsl:template name="portal:renderRegion">
     <xsl:param name="name"/>
-    <div id="main" data-live-edit-type="region" data-live-edit-key="80" data-live-edit-name="{$name}" data-live-edit-region="{$name}">
+    <div id="main"
+         data-live-edit-type="region"
+         data-live-edit-key="80"
+         data-live-edit-name="{$name}"
+         data-live-edit-region="{$name}">
       <xsl:for-each select="$_/context/regions/region[@name=$name]/components/component">
         <xsl:copy-of select="portal:renderComponent(@path)"/>
       </xsl:for-each>

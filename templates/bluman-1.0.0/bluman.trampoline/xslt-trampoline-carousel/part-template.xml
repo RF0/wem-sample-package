@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part-template>
+    <display-name>Trampoline Carousel</display-name>
+    <descriptor>xslt-1.0.0:xslt-trampoline-carousel</descriptor>
+    <config/>
+</part-template>

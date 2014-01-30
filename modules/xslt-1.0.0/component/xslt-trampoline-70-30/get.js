@@ -3,6 +3,7 @@ var editMode = portal.request.mode == 'edit';
 var params = {
     title: portal.content.displayName,
     componentName: portal.component.name,
+    componentPath: portal.component.path,
     editable: editMode
 };
 

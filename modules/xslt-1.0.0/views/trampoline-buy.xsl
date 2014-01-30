@@ -10,13 +10,14 @@
   <xsl:param name="editable" select="false()"/>
   <xsl:param name="title" select="''"/>
   <xsl:param name="componentName" select="''"/>
+  <xsl:param name="componentPath" select="''"/>
 
   <xsl:template match="/">
     <div class="row-fluid"
      data-live-edit-type="part"
      data-live-edit-key="10029"
      data-live-edit-name="{$componentName}"
-     data-live-edit-component="{$componentName}">
+     data-live-edit-component="{$componentPath}">
 
     <div class="span8">
         <img id="bounce-image" src="{portal:createResourceUrl('bluman.trampoline/img/Prod_stor_studsmattor_Elite_rod.jpg')}" alt=""/>

@@ -10,12 +10,13 @@
   <xsl:param name="editable" select="false()"/>
   <xsl:param name="title" select="''"/>
   <xsl:param name="componentName" select="''"/>
+  <xsl:param name="componentPath" select="''"/>
 
   <xsl:template match="/">
     <div data-live-edit-type="part"
      data-live-edit-key="10025"
      data-live-edit-name="{$componentName}"
-     data-live-edit-component="{$componentName}">
+     data-live-edit-component="{$componentPath}">
 
     <h3>Tilbehør</h3>
 
