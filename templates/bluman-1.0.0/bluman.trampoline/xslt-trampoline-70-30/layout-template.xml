@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<layout-template>
+  <display-name>Xslt Trampoline Layout 70-30</display-name>
+  <descriptor>xslt-1.0.0:xslt-trampoline-70-30</descriptor>
+  <config></config>
+  <regions>
+  </regions>
+</layout-template>

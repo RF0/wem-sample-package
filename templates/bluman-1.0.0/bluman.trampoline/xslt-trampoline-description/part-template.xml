@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part-template>
+    <display-name>Xslt Trampoline Description</display-name>
+    <descriptor>xslt-1.0.0:xslt-trampoline-description</descriptor>
+    <config/>
+</part-template>
