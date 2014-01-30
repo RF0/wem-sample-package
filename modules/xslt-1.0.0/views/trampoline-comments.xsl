@@ -21,7 +21,7 @@
 
       <div class="media">
         <a href="#" class="pull-left">
-          <img src="{portal:createResourceUrl('bluman.trampoline/img/anon.jpg')}" height="64px" width="64px"/>
+          <img src="{portal:createResourceUrl('img/anon.jpg')}" height="64px" width="64px"/>
         </a>
 
         <div class="media-body">
@@ -50,7 +50,7 @@
       </div>
       <div class="media">
         <a href="#" class="pull-left">
-          <img src="{portal:createResourceUrl('bluman.trampoline/img/anon.jpg')}" height="64px" width="64px"/>
+          <img src="{portal:createResourceUrl('img/anon.jpg')}" height="64px" width="64px"/>
         </a>
 
         <div class="media-body">
@@ -72,7 +72,7 @@
       </div>
       <div class="media">
         <a href="#" class="pull-left">
-          <img src="{portal:createResourceUrl('bluman.trampoline/img/anon.jpg')}" height="64px" width="64px"/>
+          <img src="{portal:createResourceUrl('img/anon.jpg')}" height="64px" width="64px"/>
         </a>
 
         <div class="media-body">
@@ -93,7 +93,7 @@
       </div>
       <div class="media">
         <a href="#" class="pull-left">
-          <img src="{portal:createResourceUrl('bluman.trampoline/img/anon.jpg')}" height="64px" width="64px"/>
+          <img src="{portal:createResourceUrl('img/anon.jpg')}" height="64px" width="64px"/>
         </a>
 
         <div class="media-body">

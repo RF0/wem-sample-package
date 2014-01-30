@@ -19,10 +19,10 @@
       <meta name="description" content=""/>
       <meta name="author" content=""/>
 
-      <link href="{portal:createResourceUrl('bluman.trampoline/css/bootstrap.css')}" rel="stylesheet"/>
-      <link href="{portal:createResourceUrl('bluman.trampoline/css/main.css')}" rel="stylesheet"/>
+      <link href="{portal:createResourceUrl('css/bootstrap.css')}" rel="stylesheet"/>
+      <link href="{portal:createResourceUrl('css/main.css')}" rel="stylesheet"/>
 
-      <link href="{portal:createResourceUrl('bluman.trampoline/css/bootstrap-responsive.css')}" rel="stylesheet"/>
+      <link href="{portal:createResourceUrl('css/bootstrap-responsive.css')}" rel="stylesheet"/>
       <xsl:if test="$editable">
         <link id="live-edit-css" rel="stylesheet" href="../../admin/live-edit/styles/_all.css" type="text/css"/>
       </xsl:if>
@@ -38,7 +38,7 @@
         </div>
       </xsl:if>
 
-      <script src="{portal:createResourceUrl('bluman.trampoline/js/jquery.js')}"></script>
+      <script src="{portal:createResourceUrl('js/jquery.js')}"></script>
 
     <div class="container">
 
@@ -74,7 +74,7 @@
       </div>
 
 
-      <script src="{portal:createResourceUrl('bluman.trampoline/js/bootstrap.js')}"></script>
+      <script src="{portal:createResourceUrl('js/bootstrap.js')}"></script>
 
       <xsl:if test="$editable">
       <script type="text/javascript">

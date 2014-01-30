@@ -22,7 +22,7 @@
 
     <div class="media" data-live-edit-type="content" data-live-edit-name="Accessories - Ladder">
         <a href="#" class="pull-left">
-            <img src="{portal:createResourceUrl('bluman.trampoline/img/Prod_liten_tillbehor_stege.png')}" height="64px" width="99px"/>
+            <img src="{portal:createResourceUrl('img/Prod_liten_tillbehor_stege.png')}" height="64px" width="99px"/>
         </a>
 
         <div class="media-body">
@@ -37,7 +37,7 @@
     </div>
     <div class="media" data-live-edit-type="content" data-live-edit-name="Accessories - Lower safety net">
         <a href="#" class="pull-left">
-            <img src="{portal:createResourceUrl('bluman.trampoline/img/Prod_liten_tillbehor_nedre-skyddsnat_1.png')}" height="64px" width="99px"/>
+            <img src="{portal:createResourceUrl('img/Prod_liten_tillbehor_nedre-skyddsnat_1.png')}" height="64px" width="99px"/>
         </a>
 
         <div class="media-body">
@@ -52,7 +52,7 @@
     </div>
     <div class="media" data-live-edit-type="content" data-live-edit-name="Accessories - Cover">
         <a href="#" class="pull-left">
-            <img src="{portal:createResourceUrl('bluman.trampoline/img/Prod_liten_tillbehor_overdragsskydd_basic.png')}" height="64px" width="99px"/>
+            <img src="{portal:createResourceUrl('img/Prod_liten_tillbehor_overdragsskydd_basic.png')}" height="64px" width="99px"/>
         </a>
 
         <div class="media-body">
@@ -67,7 +67,7 @@
     </div>
     <div class="media" data-live-edit-type="content" data-live-edit-name="Accessories - Safety net">
         <a href="#" class="pull-left">
-            <img src="{portal:createResourceUrl('bluman.trampoline/img/Prod_liten_Champion-med-nat.png')}" height="64px" width="99px"/>
+            <img src="{portal:createResourceUrl('img/Prod_liten_Champion-med-nat.png')}" height="64px" width="99px"/>
         </a>
 
         <div class="media-body">

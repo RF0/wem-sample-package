@@ -23,16 +23,16 @@
 
       <div class="carousel-inner">
         <div class="item active">
-          <img src="{portal:createResourceUrl('bluman.trampoline/img/Elite_01.jpg')}" alt=""/>
+          <img src="{portal:createResourceUrl('img/Elite_01.jpg')}" alt=""/>
         </div>
         <div class="item">
-          <img src="{portal:createResourceUrl('bluman.trampoline/img/Elite_02.jpg')}" alt=""/>
+          <img src="{portal:createResourceUrl('img/Elite_02.jpg')}" alt=""/>
         </div>
         <div class="item">
-          <img src="{portal:createResourceUrl('bluman.trampoline/img/Elite_03.jpg')}" alt=""/>
+          <img src="{portal:createResourceUrl('img/Elite_03.jpg')}" alt=""/>
         </div>
         <div class="item">
-          <img src="{portal:createResourceUrl('bluman.trampoline/img/Elite_05.jpg')}" alt=""/>
+          <img src="{portal:createResourceUrl('img/Elite_05.jpg')}" alt=""/>
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">&#171;</a>

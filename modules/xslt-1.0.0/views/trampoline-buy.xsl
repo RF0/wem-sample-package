@@ -20,7 +20,7 @@
      data-live-edit-component="{$componentPath}">
 
     <div class="span8">
-        <img id="bounce-image" src="{portal:createResourceUrl('bluman.trampoline/img/Prod_stor_studsmattor_Elite_rod.jpg')}" alt=""/>
+        <img id="bounce-image" src="{portal:createResourceUrl('img/Prod_stor_studsmattor_Elite_rod.jpg')}" alt=""/>
     </div>
     <div class="span4">
         <h3>Jumping Jack - Big Bounce</h3>
