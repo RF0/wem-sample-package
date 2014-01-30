@@ -51,11 +51,16 @@
 <div id="main" data-live-edit-type="region" data-live-edit-key="80" data-live-edit-name="{{mainRegion.name}}"
      data-live-edit-region="{{mainRegion.name}}">
 
-    <div wem:component="TrampolineBuy"/>
+    {{#mainRegion.components}}
 
-    <!-- end include -->
+    <div wem:component="{{path}}"/>
 
-    <div wem:component="Layout70-30"/>
+    {{/mainRegion.components}}
+
+    <!--
+    <div wem:component="{{mainRegion.name}}/TrampolineBuy"/>
+    <div wem:component="{{mainRegion.name}}/Layout70-30"/>
+    -->
 
 </div>
 <hr>

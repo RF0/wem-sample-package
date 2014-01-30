@@ -6,10 +6,10 @@
   <xsl:param name="_" as="node()" required="yes"/>
 
   <xsl:function name="portal:renderComponent" as="element()*">
-    <xsl:param name="name" as="xsd:string"/>
+    <xsl:param name="path" as="xsd:string"/>
     <div>
       <xsl:attribute name="wem:component">
-        <xsl:value-of select="$name"/>
+        <xsl:value-of select="$path"/>
       </xsl:attribute>
     </div>
   </xsl:function>
@@ -18,7 +18,7 @@
     <xsl:param name="name"/>
     <div id="main" data-live-edit-type="region" data-live-edit-key="80" data-live-edit-name="{$name}" data-live-edit-region="{$name}">
       <xsl:for-each select="$_/context/regions/region[@name=$name]/components/component">
-        <xsl:copy-of select="portal:renderComponent(@name)"/>
+        <xsl:copy-of select="portal:renderComponent(@path)"/>
       </xsl:for-each>
     </div>
   </xsl:template>

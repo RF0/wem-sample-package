@@ -2,12 +2,13 @@
      data-live-edit-type="layout"
      data-live-edit-key="010101"
      data-live-edit-name="{{component.name}}"
-     data-live-edit-component="{{component.name}}">
+     data-live-edit-component="{{component.path}}">
 
     <div class="span8" data-live-edit-type="region" data-live-edit-region="left">
         <!-- Description -->
 
-        <div wem:component="TrampolineDescription"/>
+
+        <div wem:component="{{component.path}}/left/TrampolineDescription"/>
 
         <!-- Gallery -->
         <div id="myCarousel" class="carousel slide" data-live-edit-type="part" data-live-edit-key="10030"
@@ -42,7 +43,7 @@
 
         <!-- Comments -->
         <div data-live-edit-type="part" data-live-edit-key="10026" data-live-edit-name="Trampoline - Comments"
-             data-live-edit-component="PartComponent:main/Layout-70-30/left/Show-Trampoline">
+             data-live-edit-component="{{component.path}}/left//Show-Trampoline">
             <h3>Kommentarer</h3>
 
             <div class="media">
@@ -142,6 +143,6 @@
     <div class="span4" data-live-edit-type="region" data-live-edit-region="right">
         <!-- Accessories -->
 
-        <div wem:component="TrampolineAccessories"/>
+        <!--div wem:component="{{component.path}}/left/TrampolineAccessories"/-->
     </div>
 </div>
