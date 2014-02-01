@@ -79,7 +79,7 @@
       <xsl:if test="$editable">
       <script type="text/javascript">
         var CONFIG = {
-        baseUri: '<xsl:value-of select="portal:createResourceUrl('')"/>'
+        baseUri: ''
         };
       </script>
 
