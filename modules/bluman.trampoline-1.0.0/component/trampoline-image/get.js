@@ -9,7 +9,9 @@ var body = system.mustache.render('views/trampoline-image.html', {
     name: content.name,
     editable: editMode,
     resourcesPath: portal.url.createResourceUrl(''),
-    component: component
+    content: content,
+    component: component,
+    imageUrl: component.image != null ? portal.url.createImageByIdUrl(component.image) : null
 });
 
 
