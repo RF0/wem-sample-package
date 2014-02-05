@@ -28,7 +28,7 @@
       </xsl:if>
     </head>
 
-    <body data-live-edit-type="page" data-live-edit-key="{{path}}" data-live-edit-name="Jumping Jack - Frogger">
+    <body data-live-edit-type="page" data-live-edit-key="{{path}}">
       <xsl:if test="$editable">
         <div class="live-edit-loader-splash-container">
           <div class="live-edit-loader-splash-content">

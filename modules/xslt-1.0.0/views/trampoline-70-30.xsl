@@ -15,8 +15,6 @@
   <xsl:template match="/">
     <div class="row-fluid"
          data-live-edit-type="layout"
-         data-live-edit-key="010101"
-         data-live-edit-name="{$componentName}"
          data-live-edit-component="{$componentPath}">
 
       <div class="span8" data-live-edit-type="region" data-live-edit-region="left">

@@ -14,8 +14,6 @@
 
   <xsl:template match="/">
     <div data-live-edit-type="part"
-         data-live-edit-key="10026"
-         data-live-edit-name="{$componentName}"
          data-live-edit-component="{$componentPath}">
       <h3>Kommentarer</h3>
 

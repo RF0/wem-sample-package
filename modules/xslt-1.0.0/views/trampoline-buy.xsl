@@ -15,8 +15,6 @@
   <xsl:template match="/">
     <div class="row-fluid"
      data-live-edit-type="part"
-     data-live-edit-key="10029"
-     data-live-edit-name="{$componentName}"
      data-live-edit-component="{$componentPath}">
 
     <div class="span8">

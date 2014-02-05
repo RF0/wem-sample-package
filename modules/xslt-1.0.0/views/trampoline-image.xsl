@@ -17,8 +17,6 @@
 
   <xsl:template match="/">
     <div data-live-edit-type="image"
-         data-live-edit-key="10028"
-         data-live-edit-name="{$componentName}"
          data-live-edit-component="{$componentPath}">
 
       <img src="{$imageUrl}"/>
