@@ -8,31 +8,31 @@
   <can-render/>
   <regions>
     <region name="main">
-      <part-component name="TrampolineBuy" descriptor="bluman.trampoline-1.0.0:xslt-trampoline-buy">
+      <part-component name="TrampolineBuy" descriptor="xslt-1.0.0:xslt-trampoline-buy">
         <config>
           <property name="text" type="String">Take a part!</property>
         </config>
       </part-component>
-      <!--part-component name="TrampolineAccessories" descriptor="bluman.trampoline-1.0.0:xslt-trampoline-accessories">
+      <!--part-component name="TrampolineAccessories" descriptor="xslt-1.0.0:xslt-trampoline-accessories">
         <config>
           <property name="text" type="String">Take a part!</property>
         </config>
       </part-component-->
-      <layout-component name="Layout70-30" descriptor="bluman.trampoline-1.0.0:xslt-trampoline-70-30">
+      <layout-component name="Layout70-30" descriptor="xslt-1.0.0:xslt-trampoline-70-30">
         <regions>
           <region name="left">
-            <part-component name="TrampolineDescription" descriptor="bluman.trampoline-1.0.0:xslt-trampoline-description">
+            <part-component name="TrampolineDescription" descriptor="xslt-1.0.0:xslt-trampoline-description">
               <config/>
             </part-component>
-            <part-component name="TrampolineCarousel" descriptor="bluman.trampoline-1.0.0:xslt-trampoline-carousel">
+            <part-component name="TrampolineCarousel" descriptor="xslt-1.0.0:xslt-trampoline-carousel">
               <config/>
             </part-component>
-            <part-component name="TrampolineComments" descriptor="bluman.trampoline-1.0.0:xslt-trampoline-comments">
+            <part-component name="TrampolineComments" descriptor="xslt-1.0.0:xslt-trampoline-comments">
               <config/>
             </part-component>
           </region>
           <region name="right">
-            <part-component name="TrampolineAccessories" descriptor="bluman.trampoline-1.0.0:xslt-trampoline-accessories">
+            <part-component name="TrampolineAccessories" descriptor="xslt-1.0.0:xslt-trampoline-accessories">
               <config/>
             </part-component>
           </region>
