@@ -5,13 +5,9 @@
 
   <xsl:param name="_" as="node()" required="yes"/>
 
-  <xsl:function name="portal:renderComponent" as="element()*">
+  <xsl:function name="portal:renderComponent" as="node()*">
     <xsl:param name="path" as="xsd:string"/>
-    <div>
-      <xsl:attribute name="wem:component">
-        <xsl:value-of select="$path"/>
-      </xsl:attribute>
-    </div>
+    <xsl:comment><xsl:text># COMPONENT </xsl:text><xsl:value-of select="$path"/></xsl:comment>
   </xsl:function>
 
   <xsl:template name="portal:renderRegion">
