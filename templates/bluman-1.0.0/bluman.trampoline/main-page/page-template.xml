@@ -5,7 +5,9 @@
   <config>
     <property name="background-color" type="String">blue</property>
   </config>
-  <can-render/>
+  <can-render>
+    <content-type>trampoline</content-type>
+  </can-render>
   <regions>
     <region name="main">
       <part-component name="TrampolineBuy" descriptor="bluman.trampoline-1.0.0:trampoline-buy">
