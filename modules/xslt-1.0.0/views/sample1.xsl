@@ -7,7 +7,7 @@
 
   <xsl:template match="/">
     <div>
-    	<a href="{portal:createServiceUrl('test', ())}">test</a>
+      <a href="{portal:createServiceUrl('test', ())}">test</a>
     </div>
   </xsl:template>
 

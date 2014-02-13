@@ -1,8 +1,7 @@
-
 var xml =
-<mydoc>
-  <content>Hello</content>
-</mydoc>;
+    <mydoc>
+        <content>Hello</content>
+    </mydoc>;
 
 var params = {
 };

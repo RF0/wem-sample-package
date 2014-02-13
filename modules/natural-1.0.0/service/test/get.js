@@ -1,6 +1,5 @@
-
 var params = {
-	title: 'Hello Dynamic :-)'
+    title: 'Hello Dynamic :-)'
 };
 
 var body = system.thymeleaf.render('views/sample.html', params);
