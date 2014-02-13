@@ -9,12 +9,12 @@
   <xsl:include href="portal-lib.xsl"/>
   <xsl:param name="editable" select="false()"/>
   <xsl:param name="title" select="''"/>
-  <xsl:param name="componentName" select="''"/>
+  <xsl:param name="componentType" select="''"/>
   <xsl:param name="componentPath" select="''"/>
 
   <xsl:template match="/">
     <div class="row-fluid"
-     data-live-edit-type="part"
+     data-live-edit-type="{$componentType}"
      data-live-edit-component="{$componentPath}">
 
     <div class="span8">

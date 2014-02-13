@@ -3,7 +3,7 @@ var editMode = portal.request.mode == 'edit';
 var params = {
     editable: editMode,
     title: portal.content.displayName,
-    componentName: portal.component.name,
+    componentType: portal.component.type,
     componentPath: portal.component.path,
     imageUrl: portal.component.image != null ? portal.url.createImageByIdUrl(portal.component.image) : null
 };

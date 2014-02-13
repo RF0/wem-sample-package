@@ -11,12 +11,12 @@
   <xsl:param name="editable" select="false()"/>
   <xsl:param name="title" select="''"/>
   <xsl:param name="contentPath" select="''"/>
-  <xsl:param name="componentName" select="''"/>
+  <xsl:param name="componentType" select="''"/>
   <xsl:param name="componentPath" select="''"/>
   <xsl:param name="imageUrl" select="''"/>
 
   <xsl:template match="/">
-    <div data-live-edit-type="image"
+    <div data-live-edit-type="{$componentType}"
          data-live-edit-component="{$componentPath}">
 
       <img src="{$imageUrl}"/>

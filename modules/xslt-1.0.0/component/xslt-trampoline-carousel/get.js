@@ -2,7 +2,7 @@ var xml = <dummy/>;
 var editMode = portal.request.mode == 'edit';
 var params = {
     title: portal.content.displayName,
-    componentName: portal.component.name,
+    componentType: portal.component.type,
     componentPath: portal.component.path,
     editable: editMode
 };
