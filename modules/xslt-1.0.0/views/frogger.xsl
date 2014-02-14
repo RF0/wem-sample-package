@@ -23,9 +23,6 @@
       <link href="{portal:createResourceUrl('css/main.css')}" rel="stylesheet"/>
 
       <link href="{portal:createResourceUrl('css/bootstrap-responsive.css')}" rel="stylesheet"/>
-      <xsl:if test="$editable">
-        <link id="live-edit-css" rel="stylesheet" href="../../admin/live-edit/styles/_all.css" type="text/css"/>
-      </xsl:if>
     </head>
 
     <body data-live-edit-type="page" data-live-edit-key="{{path}}">
@@ -75,49 +72,6 @@
 
 
       <script src="{portal:createResourceUrl('js/bootstrap.js')}"></script>
-
-      <xsl:if test="$editable">
-      <script type="text/javascript">
-        var CONFIG = {
-        baseUri: ''
-        };
-      </script>
-
-      <!-- Libs -->
-      <script type="text/javascript" src="../../admin/common/lib/_all.js"></script>
-      <script type="text/javascript" charset="UTF-8" src="../../admin/live-edit/lib/jquery.ui.touch-punch.min.js"></script>
-      <script type="text/javascript" charset="UTF-8" src="../../admin/live-edit/lib/jquery.ba-resize.min.js"></script>
-
-      <!-- It is important that this is loaded right after all jQuery dependencies -->
-      <script type="text/javascript" charset="UTF-8" src="../../admin/live-edit/lib/jquery.noconflict.js"></script>
-      <script type="text/javascript" charset="UTF-8" src="../../admin/common/js/_all.js"></script>
-      <script type="text/javascript" charset="UTF-8" src="../../admin/live-edit/js/_all.js"></script>
-
-      <!--script type="text/javascript">
-          $(function () {
-              var componentType = new LiveEdit.component.ComponentType(LiveEdit.component.Type.IMAGE);
-              componentType.setName("image");
-              componentType.setIconCls("live-edit-font-icon-image");
-              var component = new LiveEdit.component.Component();
-              component.setComponentType(componentType);
-
-
-              var emptyImageComponent = LiveEdit.component.dragdropsort.EmptyComponent.createEmptyComponentHtml(component);
-              $("#main").prepend(emptyImageComponent.getHTMLElement());
-              emptyImageComponent.init();
-          });
-      </script-->
-
-
-      </xsl:if>
-
-
-      <xsl:if test="$editable">
-      <div style="position: absolute; top: 10px; right: 10px;"><a
-          href="../../admin/home.html#/cm/open/56bf6229-b5f8-4085-9bd2-58eb103e367b">Open</a></div>
-      </xsl:if>
-
-
     </body>
     </html>
   </xsl:template>
