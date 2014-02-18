@@ -56,7 +56,7 @@
           <help-text/>
           <occurrences minimum="1" maximum="0"/>
           <config>
-            <relationship-type>default</relationship-type>
+            <relationship-type>image</relationship-type>
           </config>
         </input>
       </items>
@@ -114,7 +114,7 @@
               <help-text/>
               <occurrences minimum="1" maximum="1"/>
               <config>
-                <relationship-type>default</relationship-type>
+                <relationship-type>image</relationship-type>
               </config>
             </input>
           </items>
