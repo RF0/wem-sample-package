@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <page-template>
-  <display-name>Xslt Main Page</display-name>
+  <display-name>A Xslt Main Page</display-name>
   <descriptor>xslt-1.0.0:xslt-landing-page</descriptor>
   <config>
     <property name="background-color" type="String">blue</property>

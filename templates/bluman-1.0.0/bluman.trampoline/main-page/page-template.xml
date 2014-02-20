@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <page-template>
-  <display-name>Main Page</display-name>
+  <display-name>B Mustache Main Page</display-name>
   <descriptor>bluman.trampoline-1.0.0:landing-page</descriptor>
   <config>
     <property name="background-color" type="String">blue</property>
