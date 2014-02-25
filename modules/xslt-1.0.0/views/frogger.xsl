@@ -26,16 +26,7 @@
     </head>
 
     <body data-live-edit-type="page" data-live-edit-key="{{path}}">
-      <xsl:if test="$editable">
-        <div class="live-edit-loader-splash-container">
-          <div class="live-edit-loader-splash-content">
-            <div class="live-edit-loader-splash-spinner live-edit-font-icon-spinner"></div>
-            <div>loading page...</div>
-          </div>
-        </div>
-      </xsl:if>
-
-      <script src="{portal:createResourceUrl('js/jquery.js')}"></script>
+    <script src="{portal:createResourceUrl('js/jquery.js')}"></script>
 
     <div class="container">
 
