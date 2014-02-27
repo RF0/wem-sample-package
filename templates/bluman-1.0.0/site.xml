@@ -15,4 +15,5 @@
   </modules>
   <content-filter/>
   <root-content-type>trampoline</root-content-type>
+  <default-page-template>default-page</default-page-template>
 </site-template>
