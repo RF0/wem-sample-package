@@ -17,14 +17,14 @@
          data-live-edit-type="{$componentType}"
          data-live-edit-component="{$componentPath}">
 
-      <div class="span8" data-live-edit-type="region" data-live-edit-region="left">
+      <div class="span8">
 
         <xsl:call-template name="portal:renderRegion">
           <xsl:with-param name="name" select="'left'"/>
         </xsl:call-template>
 
       </div>
-      <div class="span4" data-live-edit-type="region" data-live-edit-region="right">
+      <div class="span4">
 
         <xsl:call-template name="portal:renderRegion">
           <xsl:with-param name="name" select="'right'"/>

@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                 xmlns:portal="wem:portal"
-                xmlns:wem="http://enonic.com/wem">
+                xmlns:wem="http://enonic.com/wem"
+                exclude-result-prefixes="wem portal xsd">
 
   <xsl:param name="_" as="node()" required="yes"/>
 
@@ -15,9 +16,7 @@
   <xsl:template name="portal:renderRegion">
     <xsl:param name="name"/>
     <xsl:variable name="regionPath" select="$_/context/regions/region[@name=$name]/@path"/>
-    <div id="main"
-         data-live-edit-type="region"
-         data-live-edit-key="80"
+    <div data-live-edit-type="region"
          data-live-edit-name="{$name}"
          data-live-edit-region="{$regionPath}">
       <xsl:for-each select="$_/context/regions/region[@name=$name]/components/component">
