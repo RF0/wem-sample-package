@@ -5,5 +5,10 @@
 
 <h1 data-wem-text="${title}">Hello Static :-(</h1>
 
+<h2>Root Contents:</h2>
+<ul>
+    <li th:each="content: ${rootContent}" th:text="${content.displayName}">My content</li>
+</ul>
+
 </body>
 </html>
