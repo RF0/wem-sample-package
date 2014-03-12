@@ -3,11 +3,13 @@
 </head>
 <body>
 
-<h1 data-wem-text="${title}">Hello Static :-(</h1>
+<h1 data-wem-text="${title}">Hello Dynamic :-)</h1>
 
 <h2>Root Contents:</h2>
 <ul>
-    <li th:each="content: ${rootContent}" th:text="${content.displayName}">My content</li>
+    <li data-th-each="content: ${contents}"><a
+        data-th-href="'?parent=' + ${content.path}"
+        data-th-text="${content.displayName}">My content</a></li>
 </ul>
 
 </body>

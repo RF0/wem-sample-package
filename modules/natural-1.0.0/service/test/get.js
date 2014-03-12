@@ -1,7 +1,19 @@
-var rootContent = system.contentService.getRootContent();
+var parentList = portal.request.params['parent'];
+
+var contents = null;
+
+if (parentList) {
+    contents = system.contentService.getChildContent(parentList.get(0));
+}
+else {
+    contents = system.contentService.getRootContent();
+}
+
+
 var params = {
     title: 'Hello Dynamic :-)',
-    rootContent: rootContent
+    contents: contents,
+    context: portal
 };
 
 var body = system.thymeleaf.render('views/sample.html', params);
