@@ -1,5 +1,8 @@
+var component = portal.component;
+
 var params = {
-	context: portal
+	context: portal,
+	component: component
 };
 
 var body = system.thymeleaf.render('views/banner.html', params);
