@@ -22,5 +22,6 @@
     </input>
   </config>
   <regions>
+    <region name="main"/>
   </regions>
 </page-component>

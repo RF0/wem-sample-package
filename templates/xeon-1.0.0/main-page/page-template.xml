@@ -7,5 +7,12 @@
     <content-type>trampoline</content-type>
   </can-render>
   <regions>
+    <region name="main">
+    	<part-component name="Banner" descriptor="xeon-1.0.0:banner">
+        <config>
+          <property name="text" type="String">ASDF</property>
+        </config>
+      </part-component>
+    </region>
   </regions>
 </page-template>
