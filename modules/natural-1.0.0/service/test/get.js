@@ -9,7 +9,6 @@ else {
     contents = system.contentService.getRootContent();
 }
 
-
 var params = {
     title: 'Hello Dynamic :-)',
     contents: contents,
