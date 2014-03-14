@@ -1,10 +1,12 @@
 var content = portal.content;
 var pageRegions = portal.pageRegions;
+var contents = system.contentService.getRootContent();
 
 var params = {
 	context: portal,
 	pageRegions: pageRegions,
-	mainRegion: pageRegions.getRegion("main")
+	mainRegion: pageRegions.getRegion("main"),
+	contents: contents
 };
 
 var body = system.thymeleaf.render('views/page.html', params);
