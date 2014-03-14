@@ -9,6 +9,7 @@
   </vendor>
   <modules>
     <module>xeon-1.0.0</module>
+    <module>com.enonic.image-1.0.0</module>
   </modules>
   <content-filter/>
   <root-content-type>trampoline</root-content-type>

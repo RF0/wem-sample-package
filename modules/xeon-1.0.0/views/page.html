@@ -48,7 +48,8 @@
         </div>
     </header><!--/#header-->
 
-    <div id="main" data-live-edit-type="region" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}">
+    <div id="main" data-live-edit-type="region" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}" data-th-each="component : ${mainRegion.components}">
+        <div data-wem-component="${component.path}" data-th-remove="tag" />
     </div>
 
     <footer id="footer">
