@@ -45,8 +45,14 @@
                 </div>
             </div>
     </header><!--/#header-->
+    
+    <div id="top" data-live-edit-type="region" data-th-attr="data-live-edit-name=${topRegion.name},data-live-edit-region=${topRegion.regionPath}">
+        <div data-th-each="component : ${topRegion.components}" data-th-remove="tag">
+            <div data-wem-component="${component.path}" data-th-remove="tag" />
+        </div>
+    </div>
 
-    <div id="main" data-live-edit-type="region" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}">
+    <div id="main" class="container" data-live-edit-type="region" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}">
         <div data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
             <div data-wem-component="${component.path}" data-th-remove="tag" />
         </div>
