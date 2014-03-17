@@ -15,10 +15,6 @@
       <indexed>false</indexed>
       <custom-text/>
       <help-text/>
-      <config>
-        <rows>10</rows>
-        <columns>50</columns>
-      </config> 
       <occurrences minimum="0" maximum="1"/>
     </input>
     <input type="TextLine" name="phone">
