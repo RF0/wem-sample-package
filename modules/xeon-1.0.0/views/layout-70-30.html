@@ -1,0 +1,17 @@
+<div class="row-fluid" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
+ 
+    <div class="span8">
+
+        <div data-th-each="component : ${leftRegion.components}" data-th-remove="tag">
+            <div data-wem-component="${component.path}" data-th-remove="tag" />
+        </div>
+
+    </div>
+    <div class="span4" >
+
+        <div data-th-each="component : ${rightRegion.components}" data-th-remove="tag">
+            <div data-wem-component="${component.path}" data-th-remove="tag" />
+        </div>
+
+    </div>
+</div>

@@ -23,7 +23,6 @@
 
 <body data-live-edit-type="page" data-spy="scroll" data-target="#navbar" data-offset="0">
     <header id="header" role="banner">
-        <div class="container">
             <div id="navbar" class="navbar navbar-default">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -45,11 +44,12 @@
                     </ul>
                 </div>
             </div>
-        </div>
     </header><!--/#header-->
 
-    <div id="main" data-live-edit-type="region" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}" data-th-each="component : ${mainRegion.components}">
-        <div data-wem-component="${component.path}" data-th-remove="tag" />
+    <div id="main" data-live-edit-type="region" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}">
+        <div data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+            <div data-wem-component="${component.path}" data-th-remove="tag" />
+        </div>
     </div>
 
     <footer id="footer">
