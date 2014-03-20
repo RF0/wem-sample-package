@@ -184,6 +184,7 @@ a:focus {
 }
 .portfolio-items {
   margin-right: -20px;
+  overflow: hidden;
 }
 .portfolio-filter {
   margin-bottom: 50px;
