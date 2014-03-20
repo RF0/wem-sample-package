@@ -6,6 +6,13 @@
 
   <xsl:param name="_" as="node()" required="yes"/>
 
+  <xsl:function name="portal:includeComponent" as="node()*">
+    <xsl:param name="componentName" as="xsd:string"/>
+    <xsl:comment>
+      <xsl:text># COMPONENT module:</xsl:text><xsl:value-of select="$componentName"/>
+    </xsl:comment>
+  </xsl:function>
+
   <xsl:function name="portal:renderComponent" as="node()*">
     <xsl:param name="path" as="xsd:string"/>
     <xsl:comment>
@@ -17,7 +24,6 @@
     <xsl:param name="name"/>
     <xsl:variable name="regionPath" select="$_/context/regions/region[@name=$name]/@path"/>
     <div data-live-edit-type="region"
-         data-live-edit-name="{$name}"
          data-live-edit-region="{$regionPath}">
       <xsl:for-each select="$_/context/regions/region[@name=$name]/components/component">
         <xsl:copy-of select="portal:renderComponent(@path)"/>

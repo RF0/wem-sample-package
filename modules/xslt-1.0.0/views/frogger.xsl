@@ -28,9 +28,9 @@
     <body data-live-edit-type="page" data-live-edit-key="{{path}}">
     <script src="{portal:createResourceUrl('js/jquery.js')}"></script>
 
-    <xsl:copy-of select="portal:renderComponent('xslt-header')"/>
+    <xsl:copy-of select="portal:includeComponent('xslt-header')"/>
 
-    <div class="container">
+      <div class="container">
 
     <div class="masthead">
 
