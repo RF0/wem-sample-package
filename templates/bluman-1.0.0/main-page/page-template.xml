@@ -30,7 +30,9 @@
               <config/>
             </part-component>
             <part-component name="TrampolineComments" descriptor="bluman.trampoline-1.0.0:trampoline-comments">
-              <config/>
+              <config>
+                <property name="maxCount" type="String">10</property>
+              </config>
             </part-component>
           </region>
           <region name="right">
