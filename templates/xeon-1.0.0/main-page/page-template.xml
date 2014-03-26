@@ -7,7 +7,6 @@
         <content-type>trampoline</content-type>
     </can-render>
     <regions>
-        <region name="top"/>
         <region name="main">
             <part-component name="Banner" descriptor="xeon-1.0.0:banner">
                 <config>

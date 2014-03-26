@@ -6,7 +6,6 @@ var params = {
 	context: portal,
 	pageRegions: pageRegions,
 	mainRegion: pageRegions.getRegion("main"),
-    topRegion: pageRegions.getRegion("top"),
 	contents: contents
 };
 

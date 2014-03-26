@@ -22,7 +22,6 @@
         </input>
     </config>
     <regions>
-        <region name="top"/>
         <region name="main"/>
     </regions>
 </page-component>
