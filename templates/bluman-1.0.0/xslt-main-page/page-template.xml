@@ -30,7 +30,9 @@
               <config/>
             </part-component>
             <part-component name="TrampolineComments" descriptor="xslt-1.0.0:xslt-trampoline-comments">
-              <config/>
+              <config>
+                <property name="maxCount" type="String">10</property>
+              </config>
             </part-component>
           </region>
           <region name="right">
