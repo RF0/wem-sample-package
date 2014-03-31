@@ -5,9 +5,10 @@ var contents = system.contentService.getRootContent();
 var params = {
 	context: portal,
 	pageRegions: pageRegions,
+	topRegion: pageRegions.getRegion("top"),
 	mainRegion: pageRegions.getRegion("main"),
 	contents: contents,
-	banner: false
+	banner: true
 };
 
 var body = system.thymeleaf.render('views/page.html', params);
