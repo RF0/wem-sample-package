@@ -48,7 +48,7 @@
         </div>
     </header><!--/#header-->
 
-    <div id="top" data-th-if="${banner}" data-live-edit-type="region" data-th-attr="data-live-edit-name=${topRegion.name},data-live-edit-region=${topRegion.regionPath}">
+    <div id="top" data-th-if="${banner and topRegion != null}" data-live-edit-type="region" data-th-attr="data-live-edit-name=${topRegion.name},data-live-edit-region=${topRegion.regionPath}">
         <div data-th-each="component : ${topRegion.components}" data-th-remove="tag">
             <div data-wem-component="${component.path}" data-th-remove="tag" />
         </div>
