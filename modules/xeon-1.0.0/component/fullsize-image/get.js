@@ -4,7 +4,7 @@ var componentType = component.type;
 var imageUrl = component != null ? portal.url.createImageByIdUrl(component.image) : '';
 
 var html = '<div data-live-edit-type="'+componentType+'" data-live-edit-component="'+componentPath+'">' +
-               '<img style="border-radius:50px;width:100%;" src="'+imageUrl+'"/>' +
+               '<img style="margin-bottom:15px;width:100%;" src="'+imageUrl+'"/>' +
            '</div>';
 
 portal.response.body = html;
