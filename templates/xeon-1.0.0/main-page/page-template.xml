@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <page-template>
-	<display-name>Xeon</display-name>
-	<descriptor>xeon-1.0.0:page</descriptor>
-	<config />
-	<can-render>
-		<content-type>trampoline</content-type>
-	</can-render>
-	<regions>
-		<region name="main">
-			<layout-component name="Layout-3-col" descriptor="xeon-1.0.0:layout-3-col">
-				<regions>
-					<region name="left"/>
-					<region name="center"/>
-					<region name="right"/>
-				</regions>
-			</layout-component>
-<!-- 			<part-component name="Banner" descriptor="xeon-1.0.0:banner">
-				<config>
-					<property name="text" type="String">ASDF</property>
-				</config>
-			</part-component> -->
-		</region>
-	</regions>
+  <display-name>Xeon</display-name>
+  <descriptor>xeon-1.0.0:page</descriptor>
+  <config/>
+  <can-render>
+    <content-type>trampoline</content-type>
+  </can-render>
+  <regions>
+    <region name="main">
+      <part-component name="Empty-part">
+        <config/>
+      </part-component>
+      <!-- 			<part-component name="Banner" descriptor="xeon-1.0.0:banner">
+              <config>
+                <property name="text" type="String">ASDF</property>
+              </config>
+            </part-component> -->
+    </region>
+  </regions>
 </page-template>
