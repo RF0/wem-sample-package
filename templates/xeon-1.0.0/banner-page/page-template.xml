@@ -7,6 +7,14 @@
         <content-type>trampoline</content-type>
     </can-render>
     <regions>
-        <region name="main"/>
+        <region name="main">
+            <layout-component name="Layout-3-col" descriptor="xeon-1.0.0:layout-3-col">
+                <regions>
+                    <region name="left"/>
+                    <region name="center"/>
+                    <region name="right"/>
+                </regions>
+            </layout-component>
+        </region>
     </regions>
 </page-template>
