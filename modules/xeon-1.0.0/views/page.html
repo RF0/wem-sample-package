@@ -48,10 +48,21 @@
         </div>
     </header><!--/#header-->
 
-    <div id="top" data-th-if="${banner and topRegion != null}" data-live-edit-type="region" data-th-attr="data-live-edit-name=${topRegion.name},data-live-edit-region=${topRegion.regionPath}">
-        <div data-th-each="component : ${topRegion.components}" data-th-remove="tag">
-            <div data-wem-component="${component.path}" data-th-remove="tag" />
-        </div>
+    <div id="top" data-th-if="${banner}">
+        <section id="main-slider" class="carousel">
+            <div class="carousel-inner">
+                <div class="item" data-th-each="slide, iterStat : ${slides}" data-th-class="${iterStat.index == 0}? 'item active' : 'item'">
+                    <div class="container">
+                        <div class="carousel-content">
+                            <h1 data-th-text="${slide.getProperty('header').value}">Free Onepage Theme</h1>
+                            <p class="lead" data-th-text="${slide.getProperty('subtitle').value}">Xeon is the best free onepage responsive theme available arround the globe<br />Download it right now for free</p>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+            <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
+            <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
+        </section><!--/#main-slider-->
     </div>
     
     <div id="main" class="container" data-live-edit-type="region" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}">
