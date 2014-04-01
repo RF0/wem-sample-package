@@ -10,9 +10,15 @@
     <region name="main">
       <layout-component name="Layout-3-col" descriptor="xeon-1.0.0:layout-3-col">
         <regions>
-          <region name="left"/>
-          <region name="center"/>
-          <region name="right"/>
+          <region name="left">
+            <image-component name="Image"/>
+          </region>
+          <region name="center">
+            <image-component name="Image"/>
+          </region>
+          <region name="right">
+            <image-component name="Image"/>
+          </region>
         </regions>
       </layout-component>
       <part-component name="mypart"/>
