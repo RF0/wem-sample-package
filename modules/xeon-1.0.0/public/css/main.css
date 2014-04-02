@@ -72,6 +72,7 @@ a:focus {
   background-repeat: no-repeat;
   padding: 200px 0;
   color: #fff;
+  z-index:-1;
 }
 #main-slider .item {
   -moz-transition: opacity ease-in-out 500ms;
