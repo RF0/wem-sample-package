@@ -5,7 +5,7 @@ var params = {
 	component: component
 };
 
-var body = system.thymeleaf.render('views/pricing.html', params);
+var body = system.thymeleaf.render('view/pricing.html', params);
 
 portal.response.contentType = 'text/html';
 portal.response.body = body;

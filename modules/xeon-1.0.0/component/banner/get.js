@@ -5,7 +5,7 @@ var params = {
 	component: component
 };
 
-var body = system.thymeleaf.render('views/banner.html', params);
+var body = system.thymeleaf.render('view/banner.html', params);
 
 portal.response.contentType = 'text/html';
 portal.response.body = body;

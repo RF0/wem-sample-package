@@ -3,7 +3,7 @@ var editMode = portal.request.mode == 'edit';
 var content = portal.content;
 var component = portal.component;
 
-var body = system.mustache.render('views/trampoline-buy.html', {
+var body = system.mustache.render('view/trampoline-buy.html', {
     title: content.displayName,
     path: content.path,
     name: content.name,

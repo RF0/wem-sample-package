@@ -7,7 +7,7 @@ var params = {
     editable: editMode
 };
 
-var body = system.xslt.render('views/header-component.xsl', xml, params);
+var body = system.xslt.render('view/header-component.xsl', xml, params);
 
 portal.response.contentType = 'text/html';
 portal.response.body = body;

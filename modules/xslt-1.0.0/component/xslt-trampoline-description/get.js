@@ -7,7 +7,7 @@ var params = {
     editable: editMode
 };
 
-var body = system.xslt.render('views/trampoline-description.xsl', xml, params);
+var body = system.xslt.render('view/trampoline-description.xsl', xml, params);
 
 portal.response.contentType = 'text/html';
 portal.response.body = body;

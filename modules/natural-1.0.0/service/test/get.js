@@ -15,7 +15,7 @@ var params = {
     context: portal
 };
 
-var body = system.thymeleaf.render('views/sample.html', params);
+var body = system.thymeleaf.render('view/sample.html', params);
 
 portal.response.contentType = 'text/html';
 portal.response.body = body;

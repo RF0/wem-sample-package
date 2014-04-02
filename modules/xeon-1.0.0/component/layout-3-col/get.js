@@ -4,7 +4,7 @@ var content = portal.content;
 var component = portal.component;
 var layoutRegions = portal.layoutRegions;
 
-var body = system.thymeleaf.render('views/layout-3-col.html', {
+var body = system.thymeleaf.render('view/layout-3-col.html', {
     title: content.displayName,
     path: content.path,
     name: content.name,

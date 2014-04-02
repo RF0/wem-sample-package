@@ -4,7 +4,7 @@ var content = portal.content;
 var component = portal.component;
 var layoutRegions = portal.layoutRegions;
 
-var body = system.mustache.render('views/trampoline-70-30.html', {
+var body = system.mustache.render('view/trampoline-70-30.html', {
     title: content.displayName,
     path: content.path,
     name: content.name,

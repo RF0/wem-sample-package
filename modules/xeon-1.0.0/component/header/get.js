@@ -8,7 +8,7 @@ var params = {
 	description: page.config.getProperty("meta-description").getString()
 };
 
-var body = system.thymeleaf.render('views/header.html', params);
+var body = system.thymeleaf.render('view/header.html', params);
 
 portal.response.contentType = 'text/html';
 portal.response.body = body;

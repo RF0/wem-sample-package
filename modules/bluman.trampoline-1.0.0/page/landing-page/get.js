@@ -2,7 +2,7 @@ var editMode = portal.request.mode == 'edit';
 
 var content = portal.content;
 var pageRegions = portal.pageRegions;
-var body = system.mustache.render('views/frogger.html', {
+var body = system.mustache.render('view/frogger.html', {
     baseUrl: portal.url.baseUrl,
     title: content.displayName,
     path: content.path,

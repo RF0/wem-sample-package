@@ -8,7 +8,7 @@ var params = {
     imageUrl: portal.component.image != null ? portal.url.createImageByIdUrl(portal.component.image) : null
 };
 
-var body = system.xslt.render('views/trampoline-image.xsl', xml, params);
+var body = system.xslt.render('view/trampoline-image.xsl', xml, params);
 
 portal.response.contentType = 'text/html';
 portal.response.body = body;
