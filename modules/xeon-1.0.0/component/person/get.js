@@ -2,7 +2,7 @@ var component = portal.component;
 var content = portal.content;
 var page = portal.content.page;
 var relatedPerson = component.config.getProperty('person');
-var person,imageContent,personData;
+var person,personData;
 
 if (content.type == 'person') {
     personData = content;
@@ -17,7 +17,7 @@ if (content.type == 'person') {
 }
 
 if (personData) {
-    imageContent = system.contentService.getContentById(personData.contentData.getProperty('image').getString());
+    var imageContent = system.contentService.getContentById(personData.contentData.getProperty('image').getString());
     person = {
         name: personData.contentData.getProperty('first-name').getString() + ' ' + personData.contentData.getProperty('middle-name').getString() + ' ' + personData.contentData.getProperty('last-name').getString(),
         title: personData.contentData.getProperty('job-title').getString(),
