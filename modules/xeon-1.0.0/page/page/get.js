@@ -1,15 +1,16 @@
 var content = portal.content;
 var pageRegions = portal.pageRegions;
-var contents = system.contentService.getRootContent();
+var site = portal.siteContent;
 var editMode = portal.request.mode == 'edit';
 
 var params = {
 	context: portal,
 	pageRegions: pageRegions,
 	mainRegion: pageRegions.getRegion("main"),
-	contents: contents,
+	contents: system.contentService.getRootContent(),
 	editable: editMode,
-	banner: false
+	banner: false,
+    site: site
 };
 
 var body = system.thymeleaf.render('view/page.html', params);

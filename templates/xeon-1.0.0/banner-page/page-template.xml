@@ -4,7 +4,7 @@
   <descriptor>xeon-1.0.0:banner-page</descriptor>
   <config/>
   <can-render>
-    <content-type>trampoline</content-type>
+    <content-type>xeon</content-type>
   </can-render>
   <regions>
     <region name="main">

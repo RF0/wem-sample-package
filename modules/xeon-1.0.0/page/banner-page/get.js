@@ -1,7 +1,7 @@
 var content = portal.content;
 var page = portal.content.page;
 var pageRegions = portal.pageRegions;
-var contents = system.contentService.getRootContent();
+var site = portal.siteContent;
 var editMode = portal.request.mode == 'edit';
 var slides = page.config.dataSets("slide");
 
@@ -9,10 +9,11 @@ var params = {
 	context: portal,
 	pageRegions: pageRegions,
 	mainRegion: pageRegions.getRegion("main"),
-	contents: contents,
+	contents: system.contentService.getRootContent(),
 	editable: editMode,
 	banner: true,
-	slides: slides
+	slides: slides,
+    site: site
 };
 
 var body = system.thymeleaf.render('view/page.html', params);
