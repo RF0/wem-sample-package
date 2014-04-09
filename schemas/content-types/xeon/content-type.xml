@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <type>
   <display-name>Xeon</display-name>
-  <content-display-name-script>$('company')</content-display-name-script>
+  <content-display-name-script/>
   <super-type>structured</super-type>
   <is-abstract>false</is-abstract>
   <is-final>true</is-final>
