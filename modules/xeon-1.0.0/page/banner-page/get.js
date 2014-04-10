@@ -9,7 +9,7 @@ var params = {
 	context: portal,
 	pageRegions: pageRegions,
 	mainRegion: pageRegions.getRegion("main"),
-	contents: system.contentService.getRootContent(),
+	contents: system.contentService.getChildContent(site.path),
 	editable: editMode,
 	banner: true,
 	slides: slides,

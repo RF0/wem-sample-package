@@ -595,6 +595,7 @@ a:focus {
 @media (max-width: 360px) {
     .navbar-default .navbar-brand {
         margin-right: 0px;
+        margin-left: 15px;
     }
 }
 

@@ -1,8 +1,9 @@
 var content = portal.content;
 var pageRegions = portal.pageRegions;
-var contents = system.contentService.getRootContent();
-var editMode = portal.request.mode == 'edit';
 var site = portal.siteContent;
+var contents = system.contentService.getChildContent(site.path);
+var editMode = portal.request.mode == 'edit';
+
 
 var params = {
 	context: portal,
