@@ -589,7 +589,11 @@ a:focus {
     margin-left: 20px;
     width: 200px;
     height: 78px;
-    background: url(../images/logo.png) no-repeat 0 50%;
+}
+
+.navbar-default .navbar-brand img {
+    margin-top: 10px;
+    margin-left: -15px;
 }
 
 @media (max-width: 360px) {
