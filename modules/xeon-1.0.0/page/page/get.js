@@ -10,7 +10,8 @@ var params = {
 	contents: system.contentService.getChildContent(site.path),
 	editable: editMode,
 	banner: false,
-    site: site
+    site: site,
+    content: content
 };
 
 var body = system.thymeleaf.render('view/page.html', params);

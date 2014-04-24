@@ -13,7 +13,8 @@ var params = {
 	editable: editMode,
 	banner: true,
 	slides: slides,
-    site: site
+    site: site,
+    content: content
 };
 
 var body = system.thymeleaf.render('view/page.html', params);
