@@ -8,7 +8,7 @@ var params = {
 	context: portal,
 	pageRegions: pageRegions,
 	mainRegion: pageRegions.getRegion("main"),
-	contents: system.contentService.getChildContent(site.path),
+	contents: getContentsWithoutImages(),
 	editable: editMode,
 	banner: false,
     site: site,
@@ -20,6 +20,18 @@ var body = system.thymeleaf.render('view/page.html', params);
 
 portal.response.contentType = 'text/html';
 portal.response.body = body;
+
+function getContentsWithoutImages() {
+    var contents = system.contentService.getChildContent(site.path).getList().toArray();
+    var noImagesContent = [];
+    for (var i = 0; i <contents.length; i++) {
+        if (contents[i].type.getContentTypeName() != "image") {
+            noImagesContent.push(contents[i]);
+        }
+    }
+
+    return noImagesContent;
+}
 
 function getLogoUrl() {
     var logoContent;
