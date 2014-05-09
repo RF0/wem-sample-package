@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page-template>
+  <display-name>A Standard page</display-name>
+  <descriptor>masterthesis-1.0.0:defaultpage</descriptor>
+  <config/>
+  <can-render>
+    <content-type>masterthesis</content-type>
+    <content-type>page</content-type>
+  </can-render>
+  <regions>
+    <region name="main">
+      <part-component name="Empty-part">
+        <config/>
+      </part-component>
+    </region>
+  </regions>
+</page-template>

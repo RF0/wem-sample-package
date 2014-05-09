@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <type>
-    <display-name>Xeon</display-name>
+    <display-name>Master Thesis</display-name>
     <content-display-name-script>$('name')</content-display-name-script>
     <super-type>structured</super-type>
     <is-abstract>false</is-abstract>
@@ -38,14 +38,6 @@
                     <help-text/>
                     <occurrences minimum="1" maximum="1"/>
                 </input>
-                <input type="TextLine" name="company">
-                    <label>Company</label>
-                    <immutable>false</immutable>
-                    <indexed>true</indexed>
-                    <custom-text/>
-                    <help-text/>
-                    <occurrences minimum="1" maximum="1"/>
-                </input>
                 <input type="TextLine" name="mail">
                     <label>E-mail</label>
                     <immutable>false</immutable>
@@ -54,68 +46,6 @@
                     <help-text/>
                     <occurrences minimum="1" maximum="1"/>
                 </input>
-            </items>
-        </field-set>
-        <field-set name="locations">
-            <label>Locations</label>
-            <items>
-                <form-item-set name="location">
-                    <label>Location</label>
-                    <immutable>false</immutable>
-                    <custom-text/>
-                    <help-text/>
-                    <occurrences minimum="0" maximum="0"/>
-                    <items>
-                        <input type="TextLine" name="label">
-                            <label>Label</label>
-                            <immutable>false</immutable>
-                            <indexed>false</indexed>
-                            <custom-text/>
-                            <help-text/>
-                            <occurrences minimum="1" maximum="1"/>
-                        </input>
-                        <input type="TextLine" name="street">
-                            <label>Street</label>
-                            <immutable>false</immutable>
-                            <indexed>true</indexed>
-                            <custom-text/>
-                            <help-text/>
-                            <occurrences minimum="1" maximum="1"/>
-                        </input>
-                        <input type="TextLine" name="city">
-                            <label>City</label>
-                            <immutable>false</immutable>
-                            <indexed>true</indexed>
-                            <custom-text/>
-                            <help-text/>
-                            <occurrences minimum="1" maximum="1"/>
-                        </input>
-                        <input type="TextLine" name="zip">
-                            <label>Zip code</label>
-                            <immutable>false</immutable>
-                            <indexed>true</indexed>
-                            <custom-text/>
-                            <help-text/>
-                            <occurrences minimum="1" maximum="1"/>
-                        </input>
-                        <input type="TextLine" name="country">
-                            <label>Country</label>
-                            <immutable>false</immutable>
-                            <indexed>true</indexed>
-                            <custom-text/>
-                            <help-text/>
-                            <occurrences minimum="1" maximum="1"/>
-                        </input>
-                        <input type="TextLine" name="phone">
-                            <label>Phone</label>
-                            <immutable>false</immutable>
-                            <indexed>true</indexed>
-                            <custom-text/>
-                            <help-text/>
-                            <occurrences minimum="1" maximum="1"/>
-                        </input>
-                    </items>
-                </form-item-set>
             </items>
         </field-set>
         <field-set name="social">
