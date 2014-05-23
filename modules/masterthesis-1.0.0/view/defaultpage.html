@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Master Thesis Template</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-th-text="${content.displayName}">Master Thesis Template</title>
     </head>
-    <body>
-        <h1>Master Thesis Template Default Page</h1>
+    <body data-live-edit-type="page" data-th-class="${editable}? 'edit'" data-offset="0">
+        <h1 data-th-text="${content.displayName}">Master Thesis Template Default Page</h1>
+
+        <div data-live-edit-type="region" id="main" class="container" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}">
+            <div data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+                <div data-wem-component="${component.path}" data-th-remove="tag" />
+            </div>
+        </div>
+
+        <script data-th-src="${context.url.createResourceUrl('js/jquery.js')}" src="../public/js/jquery.js"></script>
+        <script data-th-src="${context.url.createResourceUrl('js/bootstrap.min.js')}" src="../public/js/bootstrap.min.js"></script>
+        <script data-th-src="${context.url.createResourceUrl('js/jquery.isotope.min.js')}" src="../public/js/jquery.isotope.min.js"></script>
+        <script data-th-src="${context.url.createResourceUrl('js/jquery.prettyPhoto.js')}" src="../public/js/jquery.prettyPhoto.js"></script>
+        <script data-th-src="${context.url.createResourceUrl('js/main.js')}" src="../public/js/main.js"></script>
     </body>
 </html>

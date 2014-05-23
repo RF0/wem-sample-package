@@ -1,0 +1,24 @@
+<div class="row" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
+
+    <div data-live-edit-type="region" data-live-edit-name="top" data-th-attr="data-live-edit-region=${topRegion.regionPath}" class="top">
+
+        <div data-th-each="component : ${topRegion.components}" data-th-remove="tag">
+            <div data-wem-component="${component.path}" data-th-remove="tag" />
+        </div>
+
+    </div>
+
+    <div data-live-edit-type="region" data-live-edit-name="middle" data-th-attr="data-live-edit-region=${middleRegion.regionPath}" class="middle" >
+
+        <div data-th-each="component : ${middleRegion.components}" data-th-remove="tag">
+            <div data-wem-component="${component.path}" data-th-remove="tag" />
+        </div>
+    </div>
+
+    <div data-live-edit-type="region" data-live-edit-name="bottom" data-th-attr="data-live-edit-region=${bottomRegion.regionPath}" class="bottom" >
+
+        <div data-th-each="component : ${bottomRegion.components}" data-th-remove="tag">
+            <div data-wem-component="${component.path}" data-th-remove="tag" />
+        </div>
+    </div>
+</div>

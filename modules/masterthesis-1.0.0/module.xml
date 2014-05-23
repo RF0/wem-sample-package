@@ -7,7 +7,7 @@
         <name>Enonic AS</name>
         <url>http://www.enonic.com</url>
     </vendor>
-    <dependencies system-min-version="5.0.0-M4" system-max-version="5.0.0-M4"/>
+    <dependencies system-min-version="5.0.0-M4" system-max-version="5.0.0-M5"/>
     <form name="config">
     </form>
 </module>

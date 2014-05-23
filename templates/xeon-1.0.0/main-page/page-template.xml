@@ -12,11 +12,11 @@
       <part-component name="Empty-part">
         <config/>
       </part-component>
-      <!-- 			<part-component name="Banner" descriptor="xeon-1.0.0:banner">
+      <part-component name="Banner" descriptor="xeon-1.0.0:banner">
               <config>
                 <property name="text" type="String">ASDF</property>
               </config>
-            </part-component> -->
+            </part-component>
     </region>
   </regions>
 </page-template>

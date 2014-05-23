@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<layout-component>
+  <display-name>masterthesis</display-name>
+  <config/>
+  <regions>
+    <region name="top"/>
+    <region name="middle"/>
+    <region name="bottom"/>
+  </regions>
+</layout-component>

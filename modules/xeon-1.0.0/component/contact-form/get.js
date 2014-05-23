@@ -18,8 +18,8 @@ var data = {
 };
 
 var params = {
-	context: portal,
-	component: component,
+    context: portal,
+    component: component,
     site: site,
     data: data
 };
