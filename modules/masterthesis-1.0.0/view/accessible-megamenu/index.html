@@ -1,12 +1,12 @@
 <div class="LayoutGrid LayoutCenter PanelDiffuseShadow PanelFillExtraLight">
-    <script src="js/source-sans-pro.js"></script>
-    <script src="js/run_prettify.js"></script>
+    <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/source-sans-pro.js')}" src="../../public/accessible-megamenu/js/source-sans-pro.js"></script>
+    <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/run_prettyfy.js')}" src="../../public/accessible-megamenu/js/run_prettyfy.js"></script>
 
-    <script data-th-src="${context.url.createResourceUrl('js/jquery.js')}" src="js/jquery-1.10.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
-    <script src="js/jquery-accessibleMegaMenu.js"></script>
-    <script src="js/main.js"></script>
+    <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/jquery-1.10.1.min.js')}" src="../../public/accessible-megamenu/js/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" type="text/css"  data-th-href="${context.url.createResourceUrl('accessible-megamenu/css/main.css')}" href="../../public/accessible-megamenu/css/main.css" />
+    <link rel="stylesheet" type="text/css" data-th-href="${context.url.createResourceUrl('accessible-megamenu/css/megamenu.css')}" href="../../public/accessible-megamenu/css/megamenu.css" />
+    <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/jquery-accessibleMegaMenu.js')}" src="../../public/accessible-megamenu/js/jquery-accessibleMegaMenu.js"></script>
+    <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/main.js')}" src="../../public/accessible-megamenu/js/main.js"></script>
 
     <nav class="megamenu" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
         <ol>
