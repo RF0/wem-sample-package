@@ -8,15 +8,17 @@
     <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/jquery-accessibleMegaMenu.js')}" src="../../public/accessible-megamenu/js/jquery-accessibleMegaMenu.js"></script>
     <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/main.js')}" src="../../public/accessible-megamenu/js/main.js"></script>
 
-    <nav data-th-if="${menuContents}">
+    <nav class="megamenu" data-th-if="${menuContents}" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
         <ol>
             <li data-th-each="menuContent : ${menuContents}">
-                <span data-th-text="${menuContent.displayName}"></span>
-                <span data-th-text="${menuContent}"></span>
+                <h2><a href="#" data-th-text="${menuContent.displayName}"/></h2>
+                <div class="cols-4">
+
+                </div>
             </li>
         </ol>
     </nav>
-
+<!--
     <nav class="megamenu" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
         <ol>
             <li>
@@ -217,7 +219,7 @@
                 </div>
             </li>
         </ol>
-    </nav>
+    </nav>-->
     <main role="main">
 
         <h1>An Accessible Mega Menu</h1>
