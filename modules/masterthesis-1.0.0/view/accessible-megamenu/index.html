@@ -7,13 +7,18 @@
     <link rel="stylesheet" type="text/css" data-th-href="${context.url.createResourceUrl('accessible-megamenu/css/megamenu.css')}" href="../../public/accessible-megamenu/css/megamenu.css" />
     <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/jquery-accessibleMegaMenu.js')}" src="../../public/accessible-megamenu/js/jquery-accessibleMegaMenu.js"></script>
     <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/main.js')}" src="../../public/accessible-megamenu/js/main.js"></script>
+    <!--article:<p data-th-text="${article}"></p>
+    articleData:<p data-th-text="${article.contentData.getProperty('preface').value}"></p>
+    articleData2:<p data-th-text="${articleData.preface}"></p>
+    ID:<p data-th-text="${contentId}"></p>
+    -->
 
     <nav class="megamenu" data-th-if="${menuContents}" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
         <ol>
             <li data-th-each="menuContent : ${menuContents}">
                 <h2><a href="#" data-th-text="${menuContent.displayName}"/></h2>
                 <div class="cols-4">
-
+                    <p data-th-if="${menuContent.contentData.getProperty('preface')}" data-th-text="${menuContent.contentData.getProperty('preface').value}"></p>
                 </div>
             </li>
         </ol>
