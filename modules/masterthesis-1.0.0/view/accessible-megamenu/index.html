@@ -13,16 +13,25 @@
     ID:<p data-th-text="${contentId}"></p>
     -->
 
+
     <nav class="megamenu" data-th-if="${menuContents}" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
         <ol>
-            <li data-th-each="menuContent : ${menuContents}">
-                <h2><a href="#" data-th-text="${menuContent.displayName}"/></h2>
+            <li data-th-each="menuItem : ${menuItems}">
+                <h2><a href="#" data-th-text="${menuItem.displayName}"/></h2>
                 <div class="cols-4">
-                    <p data-th-if="${menuContent.contentData.getProperty('preface')}" data-th-text="${menuContent.contentData.getProperty('preface').value}"></p>
+                    <p data-th-if="${menuItem.contentData.getProperty('preface')}" data-th-text="${menuItem.contentData.getProperty('preface').value}">
+                    </p>
+                    <!--<ol data-th-if="${contentService.getChildren(menuContent.path)}" data-th-each="contentChild : ${contentService.getChildren(menuContent.path)">
+                        <li data-th-text="${contentChild}"></li>
+                    </ol>-->
+                    <p data-th-text="${menuItem.path}"></p>
+                    <p data-th-text="${menuItem}"></p>
+                    <p data-th-text="${menuItem.contentData}"></p>
                 </div>
             </li>
         </ol>
     </nav>
+
 <!--
     <nav class="megamenu" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
         <ol>

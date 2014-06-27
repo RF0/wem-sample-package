@@ -1,5 +1,10 @@
 <article>
     <header>
-        <h1>Article show heading</h1>
+        <h1 data-th-text="${content.displayName}">Article heading</h1>
     </header>
+    <div>
+        <p data-th-text="${articleContent.getProperty('preface').getString()}"/>
+        <p data-th-text="${articleContent.getProperty('body').getString()}"/>
+    </div>
+
 </article>

@@ -1,8 +1,10 @@
 var component = portal.component;
+var content = portal.content;
 
 var params = {
     context: portal,
     component: component,
+    content: content,
     title: "Article Show"
 };
 

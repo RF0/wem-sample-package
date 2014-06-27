@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page-template>
+    <display-name>Article</display-name>
+    <descriptor>masterthesis-1.0.0:article</descriptor>
+    <config/>
+    <can-render>
+        <content-type>article</content-type>
+    </can-render>
+    <regions>
+        <region name="main">
+            <part-component name="Article" descriptor="masterthesis-1.0.0:article">
+                <config/>
+            </part-component>
+        </region>
+    </regions>
+</page-template>
