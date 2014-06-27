@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <page-template>
     <display-name>Article</display-name>
-    <descriptor>masterthesis-1.0.0:article</descriptor>
+    <descriptor>masterthesis-1.0.0:defaultpage</descriptor>
     <config/>
     <can-render>
         <content-type>article</content-type>
