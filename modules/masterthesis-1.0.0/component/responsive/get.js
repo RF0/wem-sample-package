@@ -11,7 +11,7 @@ var body = system.thymeleaf.render('view/responsive.html', {
     resourcesPath: portal.url.createResourceUrl(''),
     component: component,
     topRegion: layoutRegions.getRegion("top"),
-    middleRegion: layoutRegions.getRegion("middle"),
+    middleRegion: layoutRegions.getRegion("main"),
     bottomRegion: layoutRegions.getRegion("bottom")
 });
 

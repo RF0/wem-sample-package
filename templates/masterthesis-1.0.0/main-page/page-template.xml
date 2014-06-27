@@ -8,24 +8,15 @@
         <content-type>page</content-type>
     </can-render>
     <regions>
-        <region name="main">
-           <part-component name="Empty-part">
+        <region name="top">
+            <part-component name="Megamenu" descriptor="masterthesis-1.0.0:accessible-megamenu">
                 <config/>
             </part-component>
-            <!--<image-component name="Image"/>
-            <layout-component name="responsive" descriptor="masterthesis-1.0.0:responsive">
-                <regions>
-                    <region name="top">
-                        <image-component name="Image"/>
-                    </region>
-                    <region name="middle">
-                        <image-component name="Image"/>
-                    </region>
-                    <region name="bottom">
-                        <image-component name="Image"/>
-                    </region>
-                </regions>
-            </layout-component>-->
+        </region>
+        <region name="main">
+            <part-component name="Article" descriptor="masterthesis-1.0.0:article">
+                <config/>
+            </part-component>
         </region>
     </regions>
 </page-template>

@@ -8,6 +8,12 @@
     <body data-live-edit-type="page" data-th-class="${editable}? 'edit'" data-offset="0">
         <h1 data-th-text="${content.displayName}">Master Thesis Template Default Page</h1>
 
+        <!--<div data-live-edit-type="region" id="top" class="container" data-th-attr="data-live-edit-name=${topRegion.name},data-live-edit-region=${topRegion.regionPath}">
+            <div data-th-each="component : ${topRegion.components}" data-th-remove="tag">
+                <div data-wem-component="${component.path}" data-th-remove="tag" />
+            </div>
+        </div>-->
+
         <div data-live-edit-type="region" id="main" class="container" data-th-attr="data-live-edit-name=${mainRegion.name},data-live-edit-region=${mainRegion.regionPath}">
             <div data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
                 <div data-wem-component="${component.path}" data-th-remove="tag" />

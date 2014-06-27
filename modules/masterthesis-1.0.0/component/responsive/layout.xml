@@ -4,7 +4,7 @@
   <config/>
   <regions>
     <region name="top"/>
-    <region name="middle"/>
+    <region name="main"/>
     <region name="bottom"/>
   </regions>
 </layout-component>

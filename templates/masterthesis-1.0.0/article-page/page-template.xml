@@ -7,6 +7,11 @@
         <content-type>article</content-type>
     </can-render>
     <regions>
+        <region name="top">
+            <part-component name="Megamenu" descriptor="masterthesis-1.0.0:accessible-megamenu">
+                <config/>
+            </part-component>
+        </region>
         <region name="main">
             <part-component name="Article" descriptor="masterthesis-1.0.0:article">
                 <config/>
