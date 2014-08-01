@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<relationship-type>
+    <display-name>Menuitem</display-name>
+    <from-semantic>relates to</from-semantic>
+    <to-semantic>related of</to-semantic>
+    <allowed-from-types/>
+    <allowed-to-types>
+        <content-type>accessible-menuitem</content-type>
+        <content-type>article</content-type>
+    </allowed-to-types>
+</relationship-type>

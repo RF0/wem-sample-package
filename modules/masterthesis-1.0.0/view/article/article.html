@@ -3,9 +3,7 @@
         <h1 data-th-text="${content.displayName}">Article heading</h1>
     </header>
     <div>
-        <p data-th-text="${articleContent.getProperty('preface').getString()}"/>
-        <p data-th-text="${articleContent.getProperty('body').getString()}"/>
-        <p data-th-text="${articleContent}"/>
+        <p data-th-if="${articleContent.getProperty('preface')!=null}" data-th-text="${articleContent.getProperty('preface').getString()}">Article preface</p>
+        <p data-th-if="${articleContent.getProperty('body')!=null}" data-th-text="${articleContent.getProperty('body').getString()}">Article body</p>
     </div>
-
 </article>

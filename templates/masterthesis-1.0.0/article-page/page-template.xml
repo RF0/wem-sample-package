@@ -5,6 +5,7 @@
     <config/>
     <can-render>
         <content-type>article</content-type>
+        <content-type>accessible-megamenu</content-type>
     </can-render>
     <regions>
         <region name="top">

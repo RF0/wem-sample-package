@@ -1,7 +1,7 @@
 var component = portal.component;
 var site = portal.siteContent;
 var content = portal.content;
-var menuItems = system.contentService.getChildContent(site.path+"/megamenu").getList().toArray();
+var menuItems = system.contentService.getChildContent(site.path+"/mainmenu").getList().toArray();
 var editMode = portal.request.mode == 'edit';
 var article,articleData,articleChildren;
 var contentId;
