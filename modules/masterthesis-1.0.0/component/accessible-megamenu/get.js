@@ -1,16 +1,18 @@
 var component = portal.component;
 var site = portal.siteContent;
 var content = portal.content;
-var menuItems = system.contentService.getChildContent(site.path+"/mainmenu").getList().toArray();
+var menuItems = system.contentService.getChildContent(site.path + "/main-menu").getList().toArray();
 var editMode = portal.request.mode == 'edit';
-var article,articleData,articleChildren;
+var articlePage,articleData,articleChildren;
 var contentId;
 
 var params = {
     context: portal,
+    content: content,
+    site: site,
     component: component,
     menuContents: getMegaMenuContents(),
-    article: article,
+    articlePage: articlePage,
     articleData: articleData,
     title: "Master Thesis Menu",
     contentId: contentId,
@@ -18,19 +20,20 @@ var params = {
     contentService: system.contentService
 };
 
-var body = system.thymeleaf.render('view/accessible-megamenu/index.html', params);
+    var body = system.thymeleaf.render('view/accessible-megamenu/index.html', params);
+    portal.response.contentType = 'text/html';
+    portal.response.body = body;
 
-portal.response.contentType = 'text/html';
-portal.response.body = body;
+
 
 function getMegaMenuContents(){
-
-    contentId = menuItems[0].id;
-    article = system.contentService.getContentById(contentId);
-    articleChildren = system.contentService.getChildContent(article.path);
-    articleData = {
-        preface:article.contentData.getProperty("preface").value2,
-        children: articleChildren
+    if (menuItems!=null && menuItems.length>0){
+        contentId = menuItems[0].id;
+        articlePage = system.contentService.getContentById(contentId);
+        articleChildren = system.contentService.getChildContent(articlePage.path);
+        articleData = {
+            children: articleChildren
+        }
     }
     return menuItems;
 }

@@ -2,7 +2,7 @@ var content = portal.content;
 var pageRegions = portal.pageRegions;
 var site = portal.siteContent;
 var editMode = portal.request.mode == 'edit';
-
+var welcomePage = system.contentService.getByPath(site.path + "/welcome");
 
 var params = {
     context: portal,

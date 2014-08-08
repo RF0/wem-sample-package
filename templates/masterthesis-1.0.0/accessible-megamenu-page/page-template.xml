@@ -5,15 +5,12 @@
     <config/>
     <can-render>
         <content-type>accessible-megamenu</content-type>
-        <content-type>page</content-type>
     </can-render>
     <regions>
         <region name="top">
             <part-component name="Megamenu" descriptor="masterthesis-1.0.0:accessible-megamenu">
                 <config/>
             </part-component>
-        </region>
-        <region name="main">
         </region>
     </regions>
 </page-template>

@@ -5,8 +5,6 @@
     <config/>
     <can-render>
         <content-type>masterthesis</content-type>
-        <content-type>page</content-type>
-        <content-type>article</content-type>
     </can-render>
     <regions>
         <region name="top">

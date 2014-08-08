@@ -7,12 +7,6 @@
     <link rel="stylesheet" type="text/css" data-th-href="${context.url.createResourceUrl('accessible-megamenu/css/megamenu.css')}" href="../../public/accessible-megamenu/css/megamenu.css" />
     <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/jquery-accessibleMegaMenu.js')}" src="../../public/accessible-megamenu/js/jquery-accessibleMegaMenu.js"></script>
     <script data-th-src="${context.url.createResourceUrl('accessible-megamenu/js/main.js')}" src="../../public/accessible-megamenu/js/main.js"></script>
-    <!--article:<p data-th-text="${article}"></p>
-    articleData:<p data-th-text="${article.contentData.getProperty('preface').value}"></p>
-    articleData2:<p data-th-text="${articleData.preface}"></p>
-    ID:<p data-th-text="${contentId}"></p>
-    -->
-
 
     <nav class="megamenu" data-th-if="${menuContents}" data-th-attr="data-live-edit-type=${component.type},data-live-edit-component=${component.path}">
         <ol>
@@ -21,15 +15,17 @@
                 <div class="cols-4">
                     <p data-th-if="${menuItem.contentData.getProperty('preface')}" data-th-text="${menuItem.contentData.getProperty('preface').value}">
                     </p>
-                    <!--<ol data-th-if="${contentService.getChildren(menuContent.path)}" data-th-each="contentChild : ${contentService.getChildren(menuContent.path)">
-                        <li data-th-text="${contentChild}"></li>
-                    </ol>-->
-                    <p data-th-text="${menuItem.path}"></p>
+                    <!--<ol data-th-if="${contentService.getChildren(menuContents.path)}" data-th-each="contentChild : ${contentService.getChildren(menuContent.path)">
+                        <li data-th-text="${contentChild}"/>
+                </ol>-->
+                    <!--<p data-th-text="${menuItem.path}"></p>
                     <p data-th-text="${menuItem}"></p>
-                    <p data-th-text="${menuItem.contentData}"></p>
+                    <p data-th-text="${menuItem.contentData}"></p>-->
                 </div>
             </li>
         </ol>
     </nav>
-
+    <!--<p data-th-text="${content!=null?content:'content is null'}" />
+    <p data-th-text="${site!=null?site:'site is null'}" />
+    <p data-th-text="${component!=null?site:'component is null'}" />-->
 </div>
